@@ -36,7 +36,13 @@ git clone <repo url>
 pip install -r requirements.txt
 ```
 
-Выполнить команды
+Добавить хранилище. Как то так.
+
+```
+dvc remote add -d myremote s3://my-bucket/path/to/storage
+```
+
+Выполнить команды.
 
 ```
 dvc pull
@@ -57,4 +63,4 @@ dvc repro
 
 ```
 mlflow ui --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns
-``
+```
