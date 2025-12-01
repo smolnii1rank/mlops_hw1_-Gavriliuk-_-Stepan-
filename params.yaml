@@ -1,0 +1,9 @@
+prepare:
+  test_size: 0.2
+  random_state: 42
+  target_column: "variety"
+
+train:
+  model_type: "logistic_regression"  # или "random_forest"
+  random_state: 42
+  n_estimators: 100  # для random forest
